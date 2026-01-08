@@ -6,4 +6,5 @@ public class Batter {
     private String team;
     private String nation;
     private String position;
+
 }
