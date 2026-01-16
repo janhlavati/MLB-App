@@ -3,13 +3,14 @@ import io
 import random
 from time import sleep
 from playwright.sync_api import sync_playwright
+from pyparsing import html_comment
 
 #List of every team abbreviation
 teams = ["ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU", "KCR", "LAA",
          "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT", "SDP", "SFG", "SEA", "STL", "TBR",
          "TEX", "TOR", "WSN"]
 
-def get_specific_team_urls(teams, year="2025"):
+def scrape_by_name(teams, year="2025"):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -19,3 +20,26 @@ def get_specific_team_urls(teams, year="2025"):
 
         url = f"https://www.baseball-reference.com/teams/{teams}/{year}.shtml"
         print(f"Scraping {teams} for {year}...")
+
+        try:
+            page.goto(url, wait_until="domcontentloaded")
+            sleep(random.uniform(4,6))
+
+            html_content = page.content()
+            html_stream = io.StringIO(html_content)
+
+            tables = pd.read_html(html_stream, attrs={'id': 'team_batting'})
+            df = tables[0]
+
+            if 'Name' in df.columns:
+                df = df[~df['Name']].str.contains("Total|Rank|Average", na=False).copy()
+
+                df['Team_Abbr'] = teams
+                df['Season'] = year
+
+                return df
+        except Exception as e:
+            print(f"Error with {teams}: {e}")
+            return None
+        finally:
+            browser.close()
