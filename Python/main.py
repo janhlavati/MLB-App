@@ -3,14 +3,13 @@ import io
 import random
 from time import sleep
 from playwright.sync_api import sync_playwright
-from pyparsing import html_comment
 
 #List of every team abbreviation
 teams = ["ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU", "KCR", "LAA",
          "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT", "SDP", "SFG", "SEA", "STL", "TBR",
          "TEX", "TOR", "WSN"]
 
-def scrape_by_name(teams, year="2025"):
+def scrape_by_name(team, year="2025"):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -18,8 +17,8 @@ def scrape_by_name(teams, year="2025"):
         )
         page = context.new_page()
 
-        url = f"https://www.baseball-reference.com/teams/{teams}/{year}.shtml"
-        print(f"Scraping {teams} for {year}...")
+        url = f"https://www.baseball-reference.com/teams/{team}/{year}.shtml"
+        print(f"Scraping {team} for {year}...")
 
         try:
             page.goto(url, wait_until="domcontentloaded")
@@ -34,12 +33,12 @@ def scrape_by_name(teams, year="2025"):
             if 'Name' in df.columns:
                 df = df[~df['Name']].str.contains("Total|Rank|Average", na=False).copy()
 
-                df['Team_Abbr'] = teams
+                df['Team_Abbr'] = team
                 df['Season'] = year
 
                 return df
         except Exception as e:
-            print(f"Error with {teams}: {e}")
+            print(f"Error with {team}: {e}")
             return None
         finally:
             browser.close()
