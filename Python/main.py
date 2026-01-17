@@ -42,3 +42,17 @@ def scrape_by_name(team, year="2025"):
             return None
         finally:
             browser.close()
+
+all_teams_data = []
+
+for team in teams:
+    data = scrape_by_name(teams)
+    if data is not None:
+        all_teams_data.append(data)
+
+    sleep(2)
+
+if all_teams_data:
+    final_df = pd.concat(all_teams_data, ignore_index=True)
+    final_df.to_csv("mlb_batting_stats_2025.csv", index=False)
+    print("Success! Created mlb_batting_stats_2025.csv")
