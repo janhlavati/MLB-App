@@ -2,6 +2,8 @@ import pandas as pd
 import io
 import random
 from time import sleep
+
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 #List of every team abbreviation
@@ -25,10 +27,19 @@ def scrape_by_name(team, year="2025"):
             sleep(random.uniform(4,6))
 
             html_content = page.content()
-            html_stream = io.StringIO(html_content)
+            clean_html = html_content.replace("", "")
 
-            tables = pd.read_html(html_stream, attrs={'id': 'team_batting'})
-            df = tables[0]
+            soup = BeautifulSoup(clean_html, 'html.parser')
+            table = soup.find('table', {'id': 'team_batting'})
+
+            if table is None:
+                table = soup.find('table', {'class': 'stats_table'})
+
+            if table is None:
+                print(f"Error: still couldn't find a table for {team}")
+                return None
+
+            df = pd.read_html(io.StringIO(str(table)))[0]
 
             if 'Name' in df.columns:
                 df = df[~df['Name']].str.contains("Total|Rank|Average", na=False).copy()
