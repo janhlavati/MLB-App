@@ -46,7 +46,7 @@ def scrape_by_name(team, year="2025"):
 all_teams_data = []
 
 for team in teams:
-    data = scrape_by_name(teams)
+    data = scrape_by_name(team)
     if data is not None:
         all_teams_data.append(data)
 
