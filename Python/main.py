@@ -26,7 +26,7 @@ def scrape_by_name(team, year="2025"):
             clean_html = html_content.replace("", "")
 
             soup = BeautifulSoup(clean_html, 'html.parser')
-            table = soup.find('table', {'id': 'team_batting'})
+            table = soup.find('table', {'id': 'team_pitching'})
 
             if table is None:
                 table = soup.find('table', {'class': 'stats_table'})
@@ -60,5 +60,5 @@ for team in teams:
 
 if all_teams_data:
     final_df = pd.concat(all_teams_data, ignore_index=True)
-    final_df.to_csv("mlb_batting_stats_2025.csv", index=False)
-    print("Success! Created mlb_batting_stats_2025.csv")
+    final_df.to_csv("mlb_pitching_stats_2025.csv", index=False)
+    print("Success! Created mlb_pitching_stats_2025.csv")
