@@ -1,7 +1,6 @@
 const { use } = require("react");
 
 const Teams = () => {
-    const[letterClass, setLetterClass] = useState('text-animate');
     const[searchQuery, setSearchQuery] = useState('');
     const[filteredTeams, setFilteredTeams] = useState(teamsData);   
 
