@@ -74,6 +74,9 @@ const TeamData = () => {
                         <th>RBIs</th>
                     </tr>
                 </thead>
+                <tbody>
+                    
+                </tbody>
             </table>
         </div>
     )
