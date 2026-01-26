@@ -66,12 +66,38 @@ const TeamData = () => {
                 <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Age</th>
                         <th>Team</th>
-                        <th>Position</th>
+                        <th>League</th>
+                        <th>WAR</th>
                         <th>Games Played</th>
-                        <th>Batting Average</th>
-                        <th>Home Runs</th>
-                        <th>RBIs</th>
+                        <th>PA</th>
+                        <th>AB</th>
+                        <th>R</th>
+                        <th>H</th>
+                        <th>2B</th>
+                        <th>3B</th>
+                        <th>HR</th>
+                        <th>RBI</th>
+                        <th>SB</th>
+                        <th>CS</th>
+                        <th>BB</th>
+                        <th>SO</th>
+                        <th>BA</th>
+                        <th>OBP</th>
+                        <th>SLG</th>
+                        <th>OPS</th>
+                        <th>OPS+</th>
+                        <th>rOBA</th>
+                        <th>rBAT+</th>
+                        <th>TB</th>
+                        <th>GIDP</th>
+                        <th>HBP</th>
+                        <th>SH</th>
+                        <th>SF</th>
+                        <th>IBB</th>
+                        <th>Position</th>
+                        <th>Awards</th>
                     </tr>
                 </thead>
                 <tbody>
