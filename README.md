@@ -1,2 +1,2 @@
 # MLB-App
-Fullstack web application - Major League Baseball statistics
+Fullstack web application - Major League Baseball statistics of players
