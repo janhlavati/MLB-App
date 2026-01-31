@@ -1,4 +1,6 @@
-import { use } from "react";
+import React, { useState, useEffect } from 'react';
+import './index.scss';
+import axios from 'axios';
 
 const TeamData = () => {
     const[loading, setLoading] = useState(true);
@@ -144,3 +146,5 @@ const TeamData = () => {
         </div>
     )
 }
+
+export default TeamData;

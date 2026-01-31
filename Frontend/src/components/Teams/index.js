@@ -1,8 +1,12 @@
-const { use } = require("react");
+import React, { useEffect, useState } from "react";
+import Loader from "react-loaders";
+import { Link } from 'react-router-dom';
+import teamData from "../../data/teams.json";
 
 const Teams = () => {
+    const [letterClass, setLetterClass] = useState('text-animate');
     const[searchQuery, setSearchQuery] = useState('');
-    const[filteredTeams, setFilteredTeams] = useState(teamsData);   
+    const[filteredTeams, setFilteredTeams] = useState(teamData);   
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -13,7 +17,7 @@ const Teams = () => {
     },);
 
     useEffect(() => {   
-        const filtered = teamsData.filter(team =>
+        const filtered = teamData.filter(team =>
             team.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
