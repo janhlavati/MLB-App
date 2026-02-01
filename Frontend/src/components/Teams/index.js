@@ -4,17 +4,10 @@ import { Link } from 'react-router-dom';
 import teamData from "../../data/teams.json";
 
 const Teams = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
     const[searchQuery, setSearchQuery] = useState('');
     const[filteredTeams, setFilteredTeams] = useState(teamData.teams);   
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLetterClass('text-animate-hover');
-        }, 4000);
 
-        return () => clearTimeout(timer);
-    }, []);
 
     useEffect(() => {   
         const filtered = teamData.teams.filter(team =>
