@@ -6,7 +6,7 @@ import teamData from "../../data/teams.json";
 const Teams = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const[searchQuery, setSearchQuery] = useState('');
-    const[filteredTeams, setFilteredTeams] = useState(teamData);   
+    const[filteredTeams, setFilteredTeams] = useState(teamData.teams);   
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -14,10 +14,10 @@ const Teams = () => {
         }, 4000);
 
         return () => clearTimeout(timer);
-    },);
+    }, []);
 
     useEffect(() => {   
-        const filtered = teamData.filter(team =>
+        const filtered = teamData.teams.filter(team =>
             team.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
