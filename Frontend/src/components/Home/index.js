@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <div className="container-home-page">
                 <div className="text-zone" style={{ textAlign: 'center' }}>
-                    <b><h1 style={{ display: 'block', borderRadius: '0px', marginBottom: '20px', padding: '10px', fontSize: '48px', background: 'linear-gradient(360deg, #470476ff, #040039c8)' }}>Major League Baseball - Statistics</h1></b>
+                    <b><h1 style={{ display: 'inline-block', border: '1px solid rgba(255, 255, 255, 0.3)', borderRadius: '20px', marginBottom: '20px', padding: '10px', fontSize: '48px', backgroundColor: '#4357ee',  }}>MLB Stats</h1></b>
                     <Link to="/teams" className="flat-button" style={{ display: 'flex', justifyContent: 'center', color: 'black', fontSize: '18px', font: 'caption', color: '#ffffffff' }}>Get Started</Link>
                 </div>
             </div>
