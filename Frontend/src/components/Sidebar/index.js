@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom"
-import LogoPL from '../../assets/images/mlb.webp'
+import LogoPL from '../../assets/images/mlb.jpg'
 import { useState } from 'react'
 
 const Sidebar = () => {
