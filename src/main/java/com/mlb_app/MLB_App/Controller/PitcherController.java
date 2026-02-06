@@ -44,6 +44,17 @@ public class PitcherController {
         return new ResponseEntity<>(createdPitcher, HttpStatus.CREATED);
     }
 
+    @PutMapping
+    public ResponseEntity<Pitcher> updatePitcher(@RequestBody Pitcher pitcher) {
+        Pitcher resultPitcher = pitcherService.updatePitcher(pitcher);
+
+        if(resultPitcher != null) {
+            return new ResponseEntity<>(resultPitcher, HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
     @DeleteMapping("/{pitcherName}")
     public ResponseEntity<String> deletePitcher(@RequestBody Pitcher pitcher) {
         pitcherService.deletePitcher(pitcher);
