@@ -1,12 +1,15 @@
 package com.mlb_app.MLB_App.Repo;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 import com.mlb_app.MLB_App.Player.Batter;
+import com.mlb_app.MLB_App.Player.Pitcher;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public class BatterRepository {
-
+public interface BatterRepository extends JpaRepository<Batter, String> {
+    void deleteByName(String batterName);
+    Optional<Pitcher> findByName(String batterName);
 }
