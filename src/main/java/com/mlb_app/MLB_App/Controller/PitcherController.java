@@ -23,16 +23,13 @@ public class PitcherController {
     @GetMapping
     public List<Pitcher> getPitchers(
             @RequestParam(required = false) String team,
-            @RequestParam(required = false) String name,
-            @RequestParam(required = false) String position) {
-                if(team != null && position != null) {
-                    return pitcherService.getPitchersByTeamAndPosition(team, position);
+            @RequestParam(required = false) String name) {
+                if(team != null && name != null) {
+                    return pitcherService.getPitchersByTeamAndName(team, name);
                 }else if(team != null) {
                     return pitcherService.getPitchersByTeam(team);
                 }else if(name != null){
                     return pitcherService.getPitchersByName(name);
-                }else if(position != null) {
-                    return pitcherService.getPitchersByPosition(position);
                 }else {
                     return pitcherService.getPitchers();
                 }
