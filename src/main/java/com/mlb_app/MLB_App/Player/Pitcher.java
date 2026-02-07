@@ -4,6 +4,7 @@ public class Pitcher {
 
     private String name;
     private int age;
+    private String pos;
     private String team;
     private String league;
     private double war;
@@ -43,9 +44,10 @@ public class Pitcher {
 
     }
 
-    public Pitcher(String name, int age, String team, String league, double war, int w, int l, double percentage, double era, int g, int gs, int gf, int cg, int sho, int sv, double ip, int h, int r, int er, int hr, int bb, int ibb, int so, int hbp, int bk, int wp, int bf, int eraPlus, double fip, double whip, double h9, double hr9, double bb9, double so9, double so_bb, String awards) {
+    public Pitcher(String name, int age, String pos, String team, String league, double war, int w, int l, double percentage, double era, int g, int gs, int gf, int cg, int sho, int sv, double ip, int h, int r, int er, int hr, int bb, int ibb, int so, int hbp, int bk, int wp, int bf, int eraPlus, double fip, double whip, double h9, double hr9, double bb9, double so9, double so_bb, String awards) {
         this.name = name;
         this.age = age;
+        this.pos = pos;
         this.team = team;
         this.league = league;
         this.war = war;

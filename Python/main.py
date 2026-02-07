@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 #List of every team abbreviation
-teams = ["ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU", "KCR", "LAA",
-         "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT", "SDP", "SFG", "SEA", "STL", "TBR",
+teams = ["ARI", "ATH", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU", "KCR", "LAA",
+         "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "PHI", "PIT", "SDP", "SFG", "SEA", "STL", "TBR",
          "TEX", "TOR", "WSN"]
 
 def scrape_by_name(team, year="2025"):
