@@ -1,10 +1,11 @@
 package com.mlb_app.MLB_App.Controller;
 
+import com.mlb_app.MLB_App.Player.Batter;
 import com.mlb_app.MLB_App.Service.BatterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:5050")
@@ -15,5 +16,19 @@ public class BatterController {
     @Autowired
     public BatterController(BatterService batterService) {
         this.batterService = batterService;
+    }
+
+    public List<Batter> getBatters(
+            @RequestParam(required = false) String team,
+            @RequestParam(required = false) String name) {
+        if (team != null & name != null) {
+            return batterService.getBattersByTeamAndName(team, name);
+        } else if (team != null) {
+            return batterService.getBattersByTeam(team);
+        } else if (name != null) {
+            return batterService.getBattersByName(name);
+        } else {
+            return batterService.getBatters();
+        }
     }
 }
