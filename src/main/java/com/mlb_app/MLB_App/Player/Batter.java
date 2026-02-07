@@ -1,7 +1,16 @@
 package com.mlb_app.MLB_App.Player;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="batters")
 public class Batter {
 
+    @Id
+    @Column(name = "name", nullable = false)
     private String name;
     private int age;
     private String team;
