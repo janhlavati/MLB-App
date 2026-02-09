@@ -84,4 +84,268 @@ public class Batter {
         this.pos = pos;
         this.awards = awards;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
+
+    public String getLeague() {
+        return league;
+    }
+
+    public void setLeague(String league) {
+        this.league = league;
+    }
+
+    public double getWar() {
+        return war;
+    }
+
+    public void setWar(double war) {
+        this.war = war;
+    }
+
+    public int getG() {
+        return g;
+    }
+
+    public void setG(int g) {
+        this.g = g;
+    }
+
+    public int getPa() {
+        return pa;
+    }
+
+    public void setPa(int pa) {
+        this.pa = pa;
+    }
+
+    public int getAb() {
+        return ab;
+    }
+
+    public void setAb(int ab) {
+        this.ab = ab;
+    }
+
+    public int getR() {
+        return r;
+    }
+
+    public void setR(int r) {
+        this.r = r;
+    }
+
+    public int getH() {
+        return h;
+    }
+
+    public void setH(int h) {
+        this.h = h;
+    }
+
+    public int getDoubles() {
+        return doubles;
+    }
+
+    public void setDoubles(int doubles) {
+        this.doubles = doubles;
+    }
+
+    public int getTriples() {
+        return triples;
+    }
+
+    public void setTriples(int triples) {
+        this.triples = triples;
+    }
+
+    public int getHr() {
+        return hr;
+    }
+
+    public void setHr(int hr) {
+        this.hr = hr;
+    }
+
+    public int getRbi() {
+        return rbi;
+    }
+
+    public void setRbi(int rbi) {
+        this.rbi = rbi;
+    }
+
+    public int getSb() {
+        return sb;
+    }
+
+    public void setSb(int sb) {
+        this.sb = sb;
+    }
+
+    public int getCs() {
+        return cs;
+    }
+
+    public void setCs(int cs) {
+        this.cs = cs;
+    }
+
+    public int getBb() {
+        return bb;
+    }
+
+    public void setBb(int bb) {
+        this.bb = bb;
+    }
+
+    public int getSo() {
+        return so;
+    }
+
+    public void setSo(int so) {
+        this.so = so;
+    }
+
+    public double getBa() {
+        return ba;
+    }
+
+    public void setBa(double ba) {
+        this.ba = ba;
+    }
+
+    public double getObp() {
+        return obp;
+    }
+
+    public void setObp(double obp) {
+        this.obp = obp;
+    }
+
+    public double getSlg() {
+        return slg;
+    }
+
+    public void setSlg(double slg) {
+        this.slg = slg;
+    }
+
+    public double getOps() {
+        return ops;
+    }
+
+    public void setOps(double ops) {
+        this.ops = ops;
+    }
+
+    public double getOpsPlus() {
+        return opsPlus;
+    }
+
+    public void setOpsPlus(double opsPlus) {
+        this.opsPlus = opsPlus;
+    }
+
+    public double getrOba() {
+        return rOba;
+    }
+
+    public void setrOba(double rOba) {
+        this.rOba = rOba;
+    }
+
+    public int getrBatPlus() {
+        return rBatPlus;
+    }
+
+    public void setrBatPlus(int rBatPlus) {
+        this.rBatPlus = rBatPlus;
+    }
+
+    public int getTb() {
+        return tb;
+    }
+
+    public void setTb(int tb) {
+        this.tb = tb;
+    }
+
+    public int getGidp() {
+        return gidp;
+    }
+
+    public void setGidp(int gidp) {
+        this.gidp = gidp;
+    }
+
+    public int getHbp() {
+        return hbp;
+    }
+
+    public void setHbp(int hbp) {
+        this.hbp = hbp;
+    }
+
+    public int getSh() {
+        return sh;
+    }
+
+    public void setSh(int sh) {
+        this.sh = sh;
+    }
+
+    public int getSf() {
+        return sf;
+    }
+
+    public void setSf(int sf) {
+        this.sf = sf;
+    }
+
+    public int getIbb() {
+        return ibb;
+    }
+
+    public void setIbb(int ibb) {
+        this.ibb = ibb;
+    }
+
+    public String getPos() {
+        return pos;
+    }
+
+    public void setPos(String pos) {
+        this.pos = pos;
+    }
+
+    public String getAwards() {
+        return awards;
+    }
+
+    public void setAwards(String awards) {
+        this.awards = awards;
+    }
 }
