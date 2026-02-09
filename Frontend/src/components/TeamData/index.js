@@ -16,7 +16,7 @@ const TeamData = () => {
         const nameValue = params.get('name');
 
         if (teamValue) {
-            axios.get(`http://localhost:5050/api/players?team=${encodeURIComponent(teamValue)}`)
+            axios.get(`http://localhost:8080/api/pitchers?team=${encodeURIComponent(teamValue)}`)
             .then(response => {
                 setPlayerData(response.data);
                 setLoading(false);
@@ -26,7 +26,7 @@ const TeamData = () => {
                 setLoading(false);
             });
         } else if (positionValue) {
-            axios.get(`http://localhost:5050/api/players?position=${encodeURIComponent(positionValue)}`)
+            axios.get(`http://localhost:8080/api/pitchers?position=${encodeURIComponent(positionValue)}`)
             .then(response => {
                 setPlayerData(response.data);
                 setLoading(false);
@@ -36,7 +36,7 @@ const TeamData = () => {
                 setLoading(false);
             });
         } else if (nameValue) {
-            axios.get(`http://localhost:5050/api/players?name=${encodeURIComponent(nameValue)}`)
+            axios.get(`http://localhost:8080/api/players?name=${encodeURIComponent(nameValue)}`)
             .then(response => {
                 setPlayerData(response.data);
                 setLoading(false);

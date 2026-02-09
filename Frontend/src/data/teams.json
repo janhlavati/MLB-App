@@ -2,123 +2,123 @@
     "teams": [
         {
             "cover": "/teams/ArizonaDiamondbacks.png",
-            "title": "Arizona Diamondbacks"
+            "title": "ArizonaDiamondbacks"
         },
         {
             "cover": "/teams/AtlantaBraves.png",
-            "title": "Atlanta Braves"
+            "title": "AtlantaBraves"
         },
         {
             "cover": "/teams/BaltimoreOrioles.png",
-            "title": "Baltimore Orioles"
+            "title": "BaltimoreOrioles"
         },
         {
             "cover": "/teams/BostonRedSox.png",
-            "title": "Boston Red Sox"
+            "title": "BostonRedSox"
         },
         {
             "cover": "/teams/ChicagoCubs.png",
-            "title": "Chicago Cubs"
+            "title": "ChicagoCubs"
         },
         {
             "cover": "/teams/ChicagoWhiteSox.png",
-            "title": "Chicago White Sox"
+            "title": "ChicagoWhiteSox"
         },
         {
             "cover": "/teams/CincinnatiReds.png",
-            "title": "Cincinnati Reds"
+            "title": "CincinnatiReds"
         },
         {
             "cover": "/teams/ClevelandGuardians.png",
-            "title": "Cleveland Guardians"
+            "title": "ClevelandGuardians"
         },
         {
             "cover": "/teams/ColoradoRockies.png",
-            "title": "Colorado Rockies"
+            "title": "ColoradoRockies"
         },
         {
             "cover": "/teams/DetroitTigers.png",
-            "title": "Detroit Tigers"
+            "title": "DetroitTigers"
         },
         {
             "cover": "/teams/HoustonAstros.png",
-            "title": "Houston Astros"
+            "title": "HoustonAstros"
         },
         {
             "cover": "/teams/KansasCityRoyals.png",
-            "title": "Kansas City Royals"
+            "title": "KansasCityRoyals"
         },
         {
             "cover": "/teams/LosAngelesAngels.png",
-            "title": "Los Angeles Angels"
+            "title": "LosAngelesAngels"
         },
         {
             "cover": "/teams/LosAngelesDodgers.png",
-            "title": "Los Angeles Dodgers"
+            "title": "LosAngelesDodgers"
         },
         {
             "cover": "/teams/MiamiMarlins.png",
-            "title": "Miami Marlins"
+            "title": "MiamiMarlins"
         },
         {
             "cover": "/teams/MilwaukeeBrewers.png",
-            "title": "Milwaukee Brewers"
+            "title": "MilwaukeeBrewers"
         },
         {
             "cover": "/teams/MinnesotaTwins.png",
-            "title": "Minnesota Twins"
+            "title": "MinnesotaTwins"
         },
         {
             "cover": "/teams/NewYorkMets.png",
-            "title": "New York Mets"
+            "title": "NewYorkMets"
         },
         {
             "cover": "/teams/NewYorkYankees.png",
-            "title": "New York Yankees"
+            "title": "NewYorkYankees"
         },
         {
             "cover": "/teams/OaklandAthletics.png",
-            "title": "Oakland Athletics"
+            "title": "OaklandAthletics"
         },
         {
             "cover": "/teams/PhiladelphiaPhillies.png",
-            "title": "Philadelphia Phillies"
+            "title": "PhiladelphiaPhillies"
         },
         {
             "cover": "/teams/PittsburghPirates.png",
-            "title": "Pittsburgh Pirates"
+            "title": "PittsburghPirates"
         },
         {
             "cover": "/teams/SanDiegoPadres.png",
-            "title": "San Diego Padres"
+            "title": "SanDiegoPadres"
         },
         {
             "cover": "/teams/SanFranciscoGiants.png",
-            "title": "San Francisco Giants"
+            "title": "SanFranciscoGiants"
         },
         {
             "cover": "/teams/SeattleMariners.png",
-            "title": "Seattle Mariners"
+            "title": "SeattleMariners"
         },
         {
             "cover": "/teams/StLouisCardinals.png",
-            "title": "St Louis Cardinals"
+            "title": "StLouisCardinals"
         },
         {
             "cover": "/teams/TampaBayRays.png",
-            "title": "Tampa Bay Rays"
+            "title": "TampaBayRays"
         },
         {
             "cover": "/teams/TexasRangers.png",
-            "title": "Texas Rangers"
+            "title": "TexasRangers"
         },
         {
             "cover": "/teams/TorontoBlueJays.png",
-            "title": "Toronto Blue Jays"
+            "title": "TorontoBlueJays"
         },
         {
             "cover": "/teams/WashingtonNationals.png",
-            "title": "Washington Nationals"
+            "title": "WashingtonNationals"
         }
     ]
 }
