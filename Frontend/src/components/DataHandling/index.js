@@ -115,7 +115,7 @@ const DataHandling = () => {
                             <td>{pitcher.hr9}</td>
                             <td>{pitcher.bb9}</td>
                             <td>{pitcher.so9}</td>
-                            <td>{pitcher.sow}</td>
+                            <td>{pitcher.so_bb}</td>
                             <td>{pitcher.awards}</td>
                             <td>{pitcher.team}</td>
                         </tr>))}<br />
