@@ -12,5 +12,6 @@ import java.util.Optional;
 @Repository
 public interface BatterRepository extends JpaRepository<Batter, String> {
     void deleteByName(String batterName);
+
     Optional<Batter> findByName(String name);
-    List<Batter> findByNameContainingIgnoreCaseAndTeamContainingIgnoreCase(String name, String team);}
+}
