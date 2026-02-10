@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping(path = "api/v1/batter")
+@RequestMapping(path = "api/batters")
 public class BatterController {
     private final BatterService batterService;
 
@@ -22,11 +22,11 @@ public class BatterController {
     }
 
 
-    @GetMapping
+    @GetMapping("/{name}")
     public List<Batter> getBatters(
             @RequestParam(required = false) String team,
             @RequestParam(required = false) String name) {
-        if (team != null & name != null) {
+        if (team != null && name != null) {
             return batterService.getBattersByTeamAndName(team, name);
         } else if (team != null) {
             return batterService.getBattersByTeam(team);
