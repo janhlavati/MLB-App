@@ -20,7 +20,7 @@ import com.mlb_app.MLB_App.Service.PitcherService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping(path = "api/v1/pitcher")
+@RequestMapping(path = "api/pitchers")
 public class PitcherController {
     private final PitcherService pitcherService;
 
