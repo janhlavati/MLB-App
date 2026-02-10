@@ -34,7 +34,7 @@ public class PitcherService {
     }
 
     public List<Pitcher> getPitchersByTeam(String teamName) {
-        return pitcherRepository.findAll().stream().filter(pitcher -> teamName.toLowerCase().equals(pitcher.getTeam())).collect(Collectors.toList());
+        return pitcherRepository.findAll().stream().filter(pitcher -> pitcher.getTeam().toLowerCase().contains(teamName.toLowerCase())).toList();
     }
 
     public Pitcher addPitcher(Pitcher pitcher) {

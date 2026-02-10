@@ -36,7 +36,7 @@ const TeamData = () => {
                 setLoading(false);
             });
         } else if (nameValue) {
-            axios.get(`http://localhost:8080/api/players?name=${encodeURIComponent(nameValue)}`)
+            axios.get(`http://localhost:8080/api/pitchers?name=${encodeURIComponent(nameValue)}`)
             .then(response => {
                 setPlayerData(response.data);
                 setLoading(false);
