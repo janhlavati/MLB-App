@@ -36,7 +36,7 @@ public class BatterService {
     public List<Batter> getBattersByTeamAndName(String teamName, String batterName) {
         return batterRepository.findAll().stream().filter(batter ->
                 teamName.equals(batter.getTeam()) &&
-                        batter.getName().toLowerCase().contains(batterName.toLowerCase())).collect(Collectors.toList());
+                batter.getName().toLowerCase().contains(batterName.toLowerCase())).collect(Collectors.toList());
     }
 
     public Batter addBatter(Batter batter) {

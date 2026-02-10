@@ -29,7 +29,7 @@ public class PitcherController {
         this.pitcherService = pitcherService;
     }
 
-    @GetMapping
+    @GetMapping("/{name}")
     public List<Pitcher> getPitchers(
             @RequestParam(required = false) String team,
             @RequestParam(required = false) String name) {
