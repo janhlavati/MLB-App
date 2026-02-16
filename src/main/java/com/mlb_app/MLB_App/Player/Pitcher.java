@@ -53,7 +53,7 @@ public class Pitcher {
 
     }
 
-    public Pitcher(String name, int age, String pos, String team, String league, double war, int w, int l, double percentage, double era, int g, int gs, int gf, int cg, int sho, int sv, double ip, int h, int r, int er, int hr, int bb, int ibb, int so, int hbp, int bk, int wp, int bf, int eraPlus, double fip, double whip, double h9, double hr9, double bb9, double so9, double so_bb, String awards) {
+    public Pitcher(String name, int age, String pos, String team, String league, Double war, Integer w, Integer l, Double percentage, Double era, Integer g, Integer gs, Integer gf, Integer cg, Integer sho, Integer sv, Double ip, Integer h, Integer r, Integer er, Integer hr, Integer bb, Integer ibb, Integer so, Integer hbp, Integer bk, Integer wp, Integer bf, Integer eraPlus, Double fip, Double whip, Double h9, Double hr9, Double bb9, Double so9, Double so_bb, String awards) {
         this.name = name;
         this.age = age;
         this.pos = pos;
