@@ -101,11 +101,11 @@ public class Pitcher {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -133,251 +133,251 @@ public class Pitcher {
         this.league = league;
     }
 
-    public double getWar() {
+    public Double getWar() {
         return war;
     }
 
-    public void setWar(double war) {
+    public void setWar(Double war) {
         this.war = war;
     }
 
-    public int getW() {
+    public Integer getW() {
         return w;
     }
 
-    public void setW(int w) {
+    public void setW(Integer w) {
         this.w = w;
     }
 
-    public int getL() {
+    public Integer getL() {
         return l;
     }
 
-    public void setL(int l) {
+    public void setL(Integer l) {
         this.l = l;
     }
 
-    public double getPercentage() {
+    public Double getPercentage() {
         return percentage;
     }
 
-    public void setPercentage(double percentage) {
+    public void setPercentage(Double percentage) {
         this.percentage = percentage;
     }
 
-    public double getEra() {
+    public Double getEra() {
         return era;
     }
 
-    public void setEra(double era) {
+    public void setEra(Double era) {
         this.era = era;
     }
 
-    public int getG() {
+    public Integer getG() {
         return g;
     }
 
-    public void setG(int g) {
+    public void setG(Integer g) {
         this.g = g;
     }
 
-    public int getGs() {
+    public Integer getGs() {
         return gs;
     }
 
-    public void setGs(int gs) {
+    public void setGs(Integer gs) {
         this.gs = gs;
     }
 
-    public int getGf() {
+    public Integer getGf() {
         return gf;
     }
 
-    public void setGf(int gf) {
+    public void setGf(Integer gf) {
         this.gf = gf;
     }
 
-    public int getCg() {
+    public Integer getCg() {
         return cg;
     }
 
-    public void setCg(int cg) {
+    public void setCg(Integer cg) {
         this.cg = cg;
     }
 
-    public int getSho() {
+    public Integer getSho() {
         return sho;
     }
 
-    public void setSho(int sho) {
+    public void setSho(Integer sho) {
         this.sho = sho;
     }
 
-    public int getSv() {
+    public Integer getSv() {
         return sv;
     }
 
-    public void setSv(int sv) {
+    public void setSv(Integer sv) {
         this.sv = sv;
     }
 
-    public double getIp() {
+    public Double getIp() {
         return ip;
     }
 
-    public void setIp(double ip) {
+    public void setIp(Double ip) {
         this.ip = ip;
     }
 
-    public int getH() {
+    public Integer getH() {
         return h;
     }
 
-    public void setH(int h) {
+    public void setH(Integer h) {
         this.h = h;
     }
 
-    public int getR() {
+    public Integer getR() {
         return r;
     }
 
-    public void setR(int r) {
+    public void setR(Integer r) {
         this.r = r;
     }
 
-    public int getEr() {
+    public Integer getEr() {
         return er;
     }
 
-    public void setEr(int er) {
+    public void setEr(Integer er) {
         this.er = er;
     }
 
-    public int getHr() {
+    public Integer getHr() {
         return hr;
     }
 
-    public void setHr(int hr) {
+    public void setHr(Integer hr) {
         this.hr = hr;
     }
 
-    public int getBb() {
+    public Integer getBb() {
         return bb;
     }
 
-    public void setBb(int bb) {
+    public void setBb(Integer bb) {
         this.bb = bb;
     }
 
-    public int getIbb() {
+    public Integer getIbb() {
         return ibb;
     }
 
-    public void setIbb(int ibb) {
+    public void setIbb(Integer ibb) {
         this.ibb = ibb;
     }
 
-    public int getSo() {
+    public Integer getSo() {
         return so;
     }
 
-    public void setSo(int so) {
+    public void setSo(Integer so) {
         this.so = so;
     }
 
-    public int getHbp() {
+    public Integer getHbp() {
         return hbp;
     }
 
-    public void setHbp(int hbp) {
+    public void setHbp(Integer hbp) {
         this.hbp = hbp;
     }
 
-    public int getBk() {
+    public Integer getBk() {
         return bk;
     }
 
-    public void setBk(int bk) {
+    public void setBk(Integer bk) {
         this.bk = bk;
     }
 
-    public int getWp() {
+    public Integer getWp() {
         return wp;
     }
 
-    public void setWp(int wp) {
+    public void setWp(Integer wp) {
         this.wp = wp;
     }
 
-    public int getBf() {
+    public Integer getBf() {
         return bf;
     }
 
-    public void setBf(int bf) {
+    public void setBf(Integer bf) {
         this.bf = bf;
     }
 
-    public int getEraPlus() {
+    public Integer getEraPlus() {
         return eraPlus;
     }
 
-    public void setEraPlus(int eraPlus) {
+    public void setEraPlus(Integer eraPlus) {
         this.eraPlus = eraPlus;
     }
 
-    public double getFip() {
+    public Double getFip() {
         return fip;
     }
 
-    public void setFip(double fip) {
+    public void setFip(Double fip) {
         this.fip = fip;
     }
 
-    public double getWhip() {
+    public Double getWhip() {
         return whip;
     }
 
-    public void setWhip(double whip) {
+    public void setWhip(Double whip) {
         this.whip = whip;
     }
 
-    public double getH9() {
+    public Double getH9() {
         return h9;
     }
 
-    public void setH9(double h9) {
+    public void setH9(Double h9) {
         this.h9 = h9;
     }
 
-    public double getHr9() {
+    public Double getHr9() {
         return hr9;
     }
 
-    public void setHr9(double hr9) {
+    public void setHr9(Double hr9) {
         this.hr9 = hr9;
     }
 
-    public double getBb9() {
+    public Double getBb9() {
         return bb9;
     }
 
-    public void setBb9(double bb9) {
+    public void setBb9(Double bb9) {
         this.bb9 = bb9;
     }
 
-    public double getSo9() {
+    public Double getSo9() {
         return so9;
     }
 
-    public void setSo9(double so9) {
+    public void setSo9(Double so9) {
         this.so9 = so9;
     }
 
-    public double getSo_bb() {
+    public Double getSo_bb() {
         return so_bb;
     }
 
-    public void setSo_bb(double so_bb) {
+    public void setSo_bb(Double so_bb) {
         this.so_bb = so_bb;
     }
 
