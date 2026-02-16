@@ -16,7 +16,7 @@ function App() {
         document.title = "MLB Stats App";
 
         const generateFetchUrl = () => {
-            let baseUrl = "http://localhost:5050/api/v1/player";
+            let baseUrl = "http://localhost:8080/api/pitchers";
             const queryParams = new URLSearchParams(location.search);
 
             if (queryParams.toString()) {

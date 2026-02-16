@@ -5,7 +5,7 @@ import teamData from "../../data/teams.json";
 
 const Teams = () => {
     const[searchQuery, setSearchQuery] = useState('');
-    const[filteredTeams, setFilteredTeams] = useState(teamData.teams);   
+    const[filteredTeams, setFilteredTeams] = useState([]);   
 
 
 
@@ -29,7 +29,7 @@ const Teams = () => {
                             <img src={team.cover} alt="teams" className="team-image" />
                             <div className="content">
                                 <p className="team-title">{team.title}</p>
-                                <Link className="btn" to={`/pitchers?team=${encodeURIComponent(team.title)}`}>View Details</Link>  
+                                <Link className="btn" to={`/data?team=${encodeURIComponent(team.title)}`}>View Details</Link>  
                               </div>
                         </div>
                     ))}

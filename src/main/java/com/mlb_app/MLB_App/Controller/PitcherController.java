@@ -20,7 +20,7 @@ import com.mlb_app.MLB_App.Service.PitcherService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping(path = "api/pitchers")
+@RequestMapping(path = "/api/pitchers")
 public class PitcherController {
     private final PitcherService pitcherService;
 
@@ -29,7 +29,7 @@ public class PitcherController {
         this.pitcherService = pitcherService;
     }
 
-    @GetMapping("/{name}")
+    @GetMapping
     public List<Pitcher> getPitchers(
             @RequestParam(required = false) String team,
             @RequestParam(required = false) String name) {

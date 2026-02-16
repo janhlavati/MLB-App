@@ -11,9 +11,9 @@ const DataHandling = () => {
         const teamValue = params.get('team');
 
         if(teamValue) {
-            axios.get(`http://localhost:8080/api/pitchers?team=${encodeURIComponent(teamValue)}`)
+            axios.get(`http://localhost:8080/api/data?team=${encodeURIComponent(teamValue)}`)
             .then(response => {
-                setPitcherData(response.pitcherData);
+                setPitcherData(response.data.pitcherData);
                 setLoading(false);
             })
             .catch(error => {
