@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Teams from "./components/Teams";
 import TeamData from "./components/TeamData";
+import DataHandling from "./components/DataHandling";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
                     <Route path="teams" element={<Teams />} />
+                    <Route path="teams" element={<DataHandling />} />
                     <Route path="data" element={<TeamData />} />
                 </Route>
             </Routes>
