@@ -83,36 +83,31 @@ const DataHandling = () => {
                             <td>{batter.g}</td>
                             <td>{batter.pa}</td>
                             <td>{batter.ab}</td>
-                            <td>{batter.percentage}</td>
-                            <td>{batter.era}</td>
-                            <td>{batter.g}</td>
-                            <td>{batter.gs}</td>
-                            <td>{batter.gf}</td>
-                            <td>{batter.cg}</td>
-                            <td>{batter.sho}</td>
-                            <td>{batter.sv}</td>
-                            <td>{batter.ip}</td>
-                            <td>{batter.h}</td>
                             <td>{batter.r}</td>
-                            <td>{batter.er}</td>
+                            <td>{batter.h}</td>
+                            <td>{batter.doubles}</td>
+                            <td>{batter.triples}</td>
                             <td>{batter.hr}</td>
+                            <td>{batter.rbi}</td>
+                            <td>{batter.sb}</td>
+                            <td>{batter.cs}</td>
                             <td>{batter.bb}</td>
-                            <td>{batter.ibb}</td>
                             <td>{batter.so}</td>
+                            <td>{batter.ba}</td>
+                            <td>{batter.obp}</td>
+                            <td>{batter.slg}</td>
+                            <td>{batter.ops}</td>
+                            <td>{batter.opsPlus}</td>
+                            <td>{batter.woba}</td>
+                            <td>{batter.wrcPlus}</td>
+                            <td>{batter.tb}</td>
+                            <td>{batter.gdp}</td>
                             <td>{batter.hbp}</td>
-                            <td>{batter.bk}</td>
-                            <td>{pitcher.wp}</td>
-                            <td>{pitcher.bf}</td>
-                            <td>{pitcher.eraPlus}</td>
-                            <td>{pitcher.fip}</td>
-                            <td>{pitcher.whip}</td>
-                            <td>{pitcher.h9}</td>
-                            <td>{pitcher.hr9}</td>
-                            <td>{pitcher.bb9}</td>
-                            <td>{pitcher.so9}</td>
-                            <td>{pitcher.so_bb}</td>
-                            <td>{pitcher.awards}</td>
-                            <td>{pitcher.team}</td>
+                            <td>{batter.sh}</td>
+                            <td>{batter.sf}</td>
+                            <td>{batter.ibb}</td>
+                            <td>{batter.awards}</td>
+                            <td>{batter.team}</td>
                         </tr>))}<br />
                         </tbody>
             </table>
