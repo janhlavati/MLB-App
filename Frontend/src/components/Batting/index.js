@@ -43,69 +43,64 @@ const DataHandling = () => {
                         <th>Name</th>
                         <th>Age</th>
                         <th>Position</th>
-                        <th>WAR</th>
-                        <th>Wins</th>
-                        <th>Losses</th>
-                        <th>W-L%</th>
-                        <th>ERA</th>
                         <th>G</th>
-                        <th>GS</th>
-                        <th>GF</th>
-                        <th>CG</th>
-                        <th>SHO</th>
-                        <th>SV</th>
-                        <th>IP</th>
-                        <th>H</th>
+                        <th>PA</th>
+                        <th>AB</th>
                         <th>R</th>
-                        <th>ER</th>
+                        <th>H</th>
+                        <th>2B</th>
+                        <th>3B</th>
                         <th>HR</th>
+                        <th>RBI</th>
+                        <th>SB</th>
+                        <th>CS</th>
                         <th>BB</th>
-                        <th>IBB</th>
                         <th>SO</th>
+                        <th>BA</th>
+                        <th>OBP</th>
+                        <th>SLG</th>
+                        <th>OPS</th>
+                        <th>OPS+</th>
+                        <th>WOBA</th>
+                        <th>WRC+</th>
+                        <th>TB</th>
+                        <th>GDP</th>
                         <th>HBP</th>
-                        <th>BK</th>
-                        <th>WP</th>
-                        <th>BF</th>
-                        <th>ERA+</th>
-                        <th>FIP</th>
-                        <th>WHIP</th>
-                        <th>h9</th>
-                        <th>HR9</th>
-                        <th>BB9</th>
-                        <th>SO9</th>
-                        <th>SO/W</th>
+                        <th>SH</th>
+                        <th>SF</th>
+                        <th>IBB</th>
                         <th>Awards</th>
                         <th>Team</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    {pitcherData.map((pitcher) => (
-                        <tr key={pitcher.name + pitcher.team}>
-                            <td>{pitcher.name}</td>
-                            <td>{pitcher.age}</td>
-                            <td>{pitcher.pos}</td>
-                            <td>{pitcher.war}</td>
-                            <td>{pitcher.w}</td>
-                            <td>{pitcher.l}</td>
-                            <td>{pitcher.percentage}</td>
-                            <td>{pitcher.era}</td>
-                            <td>{pitcher.g}</td>
-                            <td>{pitcher.gs}</td>
-                            <td>{pitcher.gf}</td>
-                            <td>{pitcher.cg}</td>
-                            <td>{pitcher.sho}</td>
-                            <td>{pitcher.sv}</td>
-                            <td>{pitcher.ip}</td>
-                            <td>{pitcher.h}</td>
-                            <td>{pitcher.r}</td>
-                            <td>{pitcher.er}</td>
-                            <td>{pitcher.hr}</td>
-                            <td>{pitcher.bb}</td>
-                            <td>{pitcher.ibb}</td>
-                            <td>{pitcher.so}</td>
-                            <td>{pitcher.hbp}</td>
-                            <td>{pitcher.bk}</td>
+                    {pitcherData.map((batter) => (
+                        <tr key={batter.name + batter.team}>
+                            <td>{batter.name}</td>
+                            <td>{batter.age}</td>
+                            <td>{batter.pos}</td>
+                            <td>{batter.g}</td>
+                            <td>{batter.pa}</td>
+                            <td>{batter.ab}</td>
+                            <td>{batter.percentage}</td>
+                            <td>{batter.era}</td>
+                            <td>{batter.g}</td>
+                            <td>{batter.gs}</td>
+                            <td>{batter.gf}</td>
+                            <td>{batter.cg}</td>
+                            <td>{batter.sho}</td>
+                            <td>{batter.sv}</td>
+                            <td>{batter.ip}</td>
+                            <td>{batter.h}</td>
+                            <td>{batter.r}</td>
+                            <td>{batter.er}</td>
+                            <td>{batter.hr}</td>
+                            <td>{batter.bb}</td>
+                            <td>{batter.ibb}</td>
+                            <td>{batter.so}</td>
+                            <td>{batter.hbp}</td>
+                            <td>{batter.bk}</td>
                             <td>{pitcher.wp}</td>
                             <td>{pitcher.bf}</td>
                             <td>{pitcher.eraPlus}</td>
