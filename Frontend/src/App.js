@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Teams from "./components/Teams";
 import TeamData from "./components/TeamData";
-import DataHandling from "./components/Batting";
+import Batting from "./components/Batting";
 
 
 function App() {

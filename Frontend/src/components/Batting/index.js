@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const DataHandling = () => {
+const Batting = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [pitcherData, setPitcherData] = useState([]);
@@ -114,4 +114,4 @@ const DataHandling = () => {
         </div>
     );
 }
-export default DataHandling;
+export default Batting;
