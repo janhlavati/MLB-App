@@ -4,21 +4,21 @@ import axios from 'axios';
 const Batting = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [pitcherData, setPitcherData] = useState([]);
+    const [batterData, setBatterData] = useState([]);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
         const teamValue = params.get('team');
 
         if(teamValue) {
-            axios.get(`http://localhost:8080/api/data?team=${encodeURIComponent(teamValue)}`)
+            axios.get(`http://localhost:8080/api/batters?team=${encodeURIComponent(teamValue)}`)
             .then(response => {
-                setPitcherData(response.data.pitcherData);
+                setBatterData(response.data.batterData);
                 setLoading(false);
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
-                setPitcherData([]);
+                setBatterData([]);
                 setLoading(false);
             });
         } else {
@@ -36,7 +36,7 @@ const Batting = () => {
 
     return (
         <div className="table-container">
-            <pre>{JSON.stringify(pitcherData, null, 2)}</pre>
+            <pre>{JSON.stringify(batterData, null, 2)}</pre>
             <table>
                 <thead>
                     <tr>
@@ -75,7 +75,7 @@ const Batting = () => {
                 </thead>
 
                 <tbody>
-                    {pitcherData.map((batter) => (
+                    {batterData.map((batter) => (
                         <tr key={batter.name + batter.team}>
                             <td>{batter.name}</td>
                             <td>{batter.age}</td>
