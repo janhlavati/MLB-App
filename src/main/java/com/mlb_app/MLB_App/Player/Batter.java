@@ -49,7 +49,7 @@ public class Batter {
 
     }
 
-    public Batter(String name, int age, String team, String league, double war, int g, int pa, int ab, int r, int h, int doubles, int triples, int hr, int rbi, int sb, int cs, int bb, int so, double ba, double obp, double slg, double ops, double opsPlus, double rOba, int rBatPlus, int tb, int gidp, int hbp, int sh, int sf, int ibb, String pos, String awards) {
+    public Batter(String name, Integer age, String team, String league, Double war, Integer g, Integer pa, Integer ab, Integer r, Integer h, Integer doubles, Integer triples, Integer hr, Integer rbi, Integer sb, Integer cs, Integer bb, Integer so, Double ba, Double obp, Double slg, Double ops, Double opsPlus, Double rOba, Integer rBatPlus, Integer tb, Integer gidp, Integer hbp, Integer sh, Integer sf, Integer ibb, String pos, String awards) {
         this.name = name;
         this.age = age;
         this.team = team;

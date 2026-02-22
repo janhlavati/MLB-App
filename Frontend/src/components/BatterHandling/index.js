@@ -65,10 +65,7 @@ const BatterHandling = () => {
                         <th>SLG</th>
                         <th>OPS</th>
                         <th>OPS+</th>
-                        <th>WOBA</th>
-                        <th>WRC+</th>
                         <th>TB</th>
-                        <th>GDP</th>
                         <th>HBP</th>
                         <th>SH</th>
                         <th>SF</th>
@@ -102,17 +99,14 @@ const BatterHandling = () => {
                             <td>{batter.slg}</td>
                             <td>{batter.ops}</td>
                             <td>{batter.opsPlus}</td>
-                            <td>{batter.woba}</td>
-                            <td>{batter.wrcPlus}</td>
                             <td>{batter.tb}</td>
-                            <td>{batter.gdp}</td>
                             <td>{batter.hbp}</td>
                             <td>{batter.sh}</td>
                             <td>{batter.sf}</td>
                             <td>{batter.ibb}</td>
-                            <td>{batter.awards}</td>
+                            <td>{batter.awards || "N/A"}</td>
                             <td>{batter.team}</td>
-                        </tr>))}<br />
+                        </tr>))}
                         </tbody>
             </table>
             {battersToShow < batterData.length ? (
