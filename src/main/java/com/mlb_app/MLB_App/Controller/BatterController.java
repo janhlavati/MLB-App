@@ -22,7 +22,7 @@ public class BatterController {
     }
 
 
-    @GetMapping("/{name}")
+    @GetMapping
     public List<Batter> getBatters(
             @RequestParam(required = false) String team,
             @RequestParam(required = false) String name) {

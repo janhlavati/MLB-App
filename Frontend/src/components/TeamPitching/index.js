@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from 'react-router-dom';
-import teamData from "../../data/teams.json";
+import teamData from "../../data/teamPitching.json";
 
-const Teams = () => {
+const TeamPitching = () => {
     const[searchQuery, setSearchQuery] = useState('');
     const[filteredTeams, setFilteredTeams] = useState([]);   
 
 
 
     useEffect(() => {   
-        const filtered = teamData.teams.filter(team =>
+        const filtered = teamData.teamPitching.filter(team =>
             team.title.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
@@ -21,10 +21,10 @@ const Teams = () => {
             setSearchQuery(event.target.value);
         }
 
-        const renderTeam = (teams) => {
+        const renderTeam = (teamPitching) => {
             return (
                 <div className="images-container">
-                    {teams.map((team, idx) => (
+                    {teamPitching.map((team, idx) => (
                         <div key={idx} className="image-box">
                             <img src={team.cover} alt="teams" className="team-image" />
                             <div className="content">
@@ -54,4 +54,4 @@ const Teams = () => {
     );
 }
 
-export default Teams;
+export default TeamPitching;

@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
-import Teams from "./components/Teams";
-import TeamData from "./components/TeamData";
+import TeamPitching from "./components/TeamPitching";
+import TeamData from "./components/PitcherHandling";
 import Batting from "./components/Batting";
 
 
@@ -44,8 +44,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path="teams" element={<Teams />} />
-                    <Route path="teams" element={<Batting />} />
+                    <Route path="teamPitching" element={<TeamPitching />} />
+                    <Route path="batting" element={<Batting />} />
                     <Route path="data" element={<TeamData />} />
                 </Route>
             </Routes>
