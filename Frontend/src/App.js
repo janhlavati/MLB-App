@@ -4,9 +4,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import TeamPitching from "./components/TeamPitching";
-import TeamData from "./components/PitcherHandling";
-import Batting from "./components/BatterHandling";
-
+import PitcherHandling from "./components/PitcherHandling";
+import TeamBatting from "./components/TeamBatting";
+import BatterHandling from "./components/BatterHandling";
 
 function App() {
     const[players, setPlayers] = useState([]);
@@ -45,8 +45,9 @@ function App() {
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
                     <Route path="teamPitching" element={<TeamPitching />} />
-                    <Route path="batting" element={<Batting />} />
-                    <Route path="data" element={<TeamData />} />
+                    <Route path="teamBatting" element={<TeamBatting />} />
+                    <Route path="pitchingData" element={<PitcherHandling />} />
+                    <Route path="battingData" element={<BatterHandling />} />
                 </Route>
             </Routes>
         </>

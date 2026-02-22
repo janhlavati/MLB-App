@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Batting = () => {
+const BatterHandling = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [batterData, setBatterData] = useState([]);
+    const [battersToShow, setBattersToShow] = useState(10);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
@@ -13,7 +14,7 @@ const Batting = () => {
         if(teamValue) {
             axios.get(`http://localhost:8080/api/batters?team=${encodeURIComponent(teamValue)}`)
             .then(response => {
-                setBatterData(response.data.batterData);
+                setBatterData(response.data);
                 setLoading(false);
             })
             .catch(error => {
@@ -36,7 +37,10 @@ const Batting = () => {
 
     return (
         <div className="table-container">
-            <pre>{JSON.stringify(batterData, null, 2)}</pre>
+            <h1>
+                <span className="text-animate">Batter Data of {batterData.length > 0 ? batterData[0].team : "Unknown Team"}</span>
+            </h1>
+            
             <table>
                 <thead>
                     <tr>
@@ -75,7 +79,7 @@ const Batting = () => {
                 </thead>
 
                 <tbody>
-                    {batterData.map((batter) => (
+                    {batterData.slice(0, battersToShow).map((batter) => (
                         <tr key={batter.name + batter.team}>
                             <td>{batter.name}</td>
                             <td>{batter.age}</td>
@@ -111,7 +115,13 @@ const Batting = () => {
                         </tr>))}<br />
                         </tbody>
             </table>
+            {battersToShow < batterData.length ? (
+                <button onClick={() => setBattersToShow(batterData.length)}>Load All Batters</button>
+            ) : (
+                <button onClick={() => setBattersToShow(10)}>Show Less</button>
+            )}
+
         </div>
     );
 }
-export default Batting;
+export default BatterHandling;

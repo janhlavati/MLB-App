@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.scss';
 import axios from 'axios';
 
-const TeamData = () => {
+const PitcherHandling = () => {
     const[loading, setLoading] = useState(true);
     const[error, setError] = useState(null);
     const[pitcherData, setPitcherData] = useState([]);
@@ -61,7 +61,7 @@ const TeamData = () => {
     return (
         <div className="table-container">
             <h1>
-
+                <span className={letterClass}>Pitcher Data of {pitcherData.length > 0 ? pitcherData[0].team : "Unknown Team"}</span>
             </h1>
 
             <table>
@@ -146,11 +146,11 @@ const TeamData = () => {
                             <th>{pitcher.team || "N/A"}</th>
                         </tr>
                     ))}
-                    
                 </tbody>
             </table>
+            <button onClick={() => setPitchersToShow(pitcherData.length)}>Load All Pitchers</button>
         </div>
     )
 }
 
-export default TeamData;
+export default PitcherHandling;
