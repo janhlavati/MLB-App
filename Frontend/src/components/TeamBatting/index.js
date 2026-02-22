@@ -28,7 +28,7 @@ const TeamBatting = () => {
                     <div key={idx} className="image-box">
                         <img src={team.cover} alt="teams" className="team-image" />
                         <div className="content">
-                            <p className="team-title">{team.title}</p>
+                            <p className="team-title">{team.description}</p>
                             <Link className="btn" to={`/battingData?team=${encodeURIComponent(team.title)}`}>View Details</Link>
                         </div>
                     </div>

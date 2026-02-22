@@ -18,7 +18,7 @@ const BatterHandling = () => {
                 setLoading(false);
             })
             .catch(error => {
-                console.error("Error fetching data:", error);
+                setError(error);
                 setBatterData([]);
                 setLoading(false);
             });
@@ -78,34 +78,34 @@ const BatterHandling = () => {
                 <tbody>
                     {batterData.slice(0, battersToShow).map((batter) => (
                         <tr key={batter.name + batter.team}>
-                            <td>{batter.name}</td>
-                            <td>{batter.age}</td>
-                            <td>{batter.pos}</td>
-                            <td>{batter.g}</td>
-                            <td>{batter.pa}</td>
-                            <td>{batter.ab}</td>
-                            <td>{batter.r}</td>
-                            <td>{batter.h}</td>
-                            <td>{batter.doubles}</td>
-                            <td>{batter.triples}</td>
-                            <td>{batter.hr}</td>
-                            <td>{batter.rbi}</td>
-                            <td>{batter.sb}</td>
-                            <td>{batter.cs}</td>
-                            <td>{batter.bb}</td>
-                            <td>{batter.so}</td>
-                            <td>{batter.ba}</td>
-                            <td>{batter.obp}</td>
-                            <td>{batter.slg}</td>
-                            <td>{batter.ops}</td>
-                            <td>{batter.opsPlus}</td>
-                            <td>{batter.tb}</td>
-                            <td>{batter.hbp}</td>
-                            <td>{batter.sh}</td>
-                            <td>{batter.sf}</td>
-                            <td>{batter.ibb}</td>
+                            <td>{batter.name || "N/A"}</td>
+                            <td>{batter.age || 0}</td>
+                            <td>{batter.pos || "N/A"}</td>
+                            <td>{batter.g || 0}</td>
+                            <td>{batter.pa || 0}</td>
+                            <td>{batter.ab || 0}</td>
+                            <td>{batter.r || 0}</td>
+                            <td>{batter.h || 0}</td>
+                            <td>{batter.doubles || 0}</td>
+                            <td>{batter.triples || 0}</td>
+                            <td>{batter.hr || 0}</td>
+                            <td>{batter.rbi || 0}</td>
+                            <td>{batter.sb || 0}</td>
+                            <td>{batter.cs || 0}</td>
+                            <td>{batter.bb || 0}</td>
+                            <td>{batter.so || 0}</td>
+                            <td>{batter.ba || 0}</td>
+                            <td>{batter.obp || 0}</td>
+                            <td>{batter.slg || 0}</td>
+                            <td>{batter.ops || 0}</td>
+                            <td>{batter.opsPlus || 0}</td>
+                            <td>{batter.tb || 0}</td>
+                            <td>{batter.hbp || 0}</td>
+                            <td>{batter.sh || 0}</td>
+                            <td>{batter.sf || 0}</td>
+                            <td>{batter.ibb || 0}</td>
                             <td>{batter.awards || "N/A"}</td>
-                            <td>{batter.team}</td>
+                            <td>{batter.team || "N/A"}</td>
                         </tr>))}
                         </tbody>
             </table>
