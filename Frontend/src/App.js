@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import TeamPitching from "./components/TeamPitching";
 import TeamData from "./components/PitcherHandling";
-import Batting from "./components/Batting";
+import Batting from "./components/BatterHandling";
 
 
 function App() {
