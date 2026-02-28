@@ -8,5 +8,13 @@
       margin-left: 100px;
       margin-top: 120px;
       color: #fff;
+  }
+
+    .images-container {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+      margin-left: 50px;
     }
 }
