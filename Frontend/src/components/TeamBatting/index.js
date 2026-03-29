@@ -11,7 +11,7 @@ const TeamBatting = () => {
 
     useEffect(() => {
         const filtered = teamData.teamBatting.filter(team =>
-            team.title.toLowerCase().includes(searchQuery.toLowerCase())
+            team.description.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
         setFilteredTeams(filtered);
