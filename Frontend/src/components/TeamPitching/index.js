@@ -12,7 +12,7 @@ const TeamPitching = () => {
 
     useEffect(() => {   
         const filtered = teamData.teamPitching.filter(team =>
-            team.title.toLowerCase().includes(searchQuery.toLowerCase())
+            team.description.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
         setFilteredTeams(filtered);
